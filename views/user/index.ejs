@@ -1,0 +1,57 @@
+<style>
+    .form-container {
+        background: #fff;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px 0px #000;
+    }
+    
+    .container-fluid {
+        padding-top: 250px;
+        padding-bottom: 80px;
+    }
+</style>
+<section class="container-fluid">
+    <div class="row justify-content-center">
+        <div class="col-12 col-sm-6 col-md-3">
+
+
+
+
+            <button class="btn btn-primary btn-block" onclick="window.location.href='/user/create_record'">create consultation</button><br><br>
+
+
+
+
+
+
+        </div>
+    </div>
+
+
+</section>
+
+<script>
+    async function submitForm(oFormElement) {
+
+
+        var response = await fetch(oFormElement.action, {
+            method: oFormElement.method,
+            credentials: 'same-origin',
+            body: new FormData(oFormElement),
+        });
+
+
+        if (response.ok) {
+            var data = await response.json(); // for res.ok() or res.json()
+            alert("登錄成功！");
+            location.assign("/");
+        } else if (response.status == 401) {
+            var data = await response.text(); // for res.send()
+            alert(data);
+        } else {
+            alert(response.statusText);
+        }
+
+    };
+</script>

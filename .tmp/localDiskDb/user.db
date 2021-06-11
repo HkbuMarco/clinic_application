@@ -1,0 +1,6 @@
+{"$$indexCreated":{"fieldName":"id","unique":true,"sparse":false}}
+{"$$indexCreated":{"fieldName":"clinic_id","unique":true,"sparse":false}}
+{"$$indexCreated":{"fieldName":"email","unique":true,"sparse":false}}
+{"$$indexCreated":{"fieldName":"phone_number","unique":true,"sparse":false}}
+{"$$indexCreated":{"fieldName":"address","unique":true,"sparse":false}}
+{"email":"abcclinic@gmail.com","password":"$2a$10$Or2gdcjJZA1Qr17nJgI6Q.W.1pmqYJYXZ2PlzEBMMXDn/sQEgDQDm","clinic_id":"12345","clinic_name":"famouseClinic","phone_number":"91000000","address":"happy role, Kowloon City, Kowloon, Hong Kong","createdAt":1623410500810,"updatedAt":1623410500810,"id":1,"_id":1}
